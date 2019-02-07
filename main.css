@@ -46,14 +46,18 @@ footer {
 }
 .alert{
     margin: 0 auto;
+    font-size: 0.8rem;
     padding: 5%;
     background: wite;
     color: black;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: auto;
     text-align: center;
     border-radius: 5%;
     box-shadow: 0 5px 5px 5px rgba(0,255,0,0.1)
+}
+figure {
+    max-width: 90%;
 }
 .box_close {
     margin-left: 20%;
@@ -78,13 +82,16 @@ footer {
 @media (min-width: 600px) and (orientation: landscape) {
     .caption_data {
         margin: 5% 0 0 0;
-        width: 40%;
+        width: 30%;
         float: left;
     }
     .caption_figure {
         width: 50%;
         height: 100vh;
         float: right;
+    }
+    .alert {
+        width: 30%;
     }
 }
 @media (min-width: 768px) {
@@ -100,6 +107,9 @@ footer {
         width: 50%;
         height: 100vh;
         float: right;
+    }
+    .alert {
+        width: 20%;
     }
 }
 @media (min-width: 1024px) {
