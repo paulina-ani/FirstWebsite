@@ -87,7 +87,7 @@ input {
 }
 
 /*Buttons*/
-.buttons {
+.buttons0 {
     margin: 2% 0 2% 0;
     padding: 5%;
     border-radius: 0.5rem;
@@ -105,25 +105,47 @@ button2 {
 button2:hover {
     width: 90%;
 }
+.buttons {
+    margin: 1% 0 1% 0;
+    padding: 2.5%;
+    border-radius: 0.5rem;
+    text-align: right;
+    width: 90%;
+    float: right;
+    color: black;
+}
 button3 {
     background-image: linear-gradient(green,lightgreen,yellow);
-    color: black;
-    width: 95%;
-    float: right;
+}
+button4 {
+    background-image: linear-gradient(yellow,lightgreen,green);
 }
 button3:hover, button4:hover {
     background-image: linear-gradient(green,green);
     border: 1px solid yellow;
     color: white;
     box-shadow: 0 3px 3px 3px rgba(255,255,0,0.1);
+    text-align: center;
 }
-button4 {
-    background-image: linear-gradient(yellow,lightgreen,green);
-    color: black;
-    width: 95%;
-    float: right;
+button5 {
+    background-image: linear-gradient(blue,lightblue);
 }
-
+button6 {
+    background-image: linear-gradient(lightblue,cyan);
+}
+button7 {
+    background-image: linear-gradient(cyan,yellow);
+}
+button8 {
+    background-image: linear-gradient(yellow,lightgreen);
+}
+button9 {
+    background-image: linear-gradient(lightgreen,green,darkgreen);
+}
+button10.buttons {
+    background-image: linear-gradient(green,darkgreen,black);
+    color: white;
+}
 /* Media queries*/
 @media (min-width: 600px) and (orientation: landscape) {
     .caption_data {
@@ -156,6 +178,30 @@ button4 {
     }
     .alert {
         width: 20%;
+    }
+        .buttons {
+        width: 35%;
+        display: inline-block;
+        margin: 5%;
+    }
+    button5 {
+        background-image: linear-gradient(cyan,yellow);
+    }
+    button6 {
+        background-image: linear-gradient(cyan,yellow);
+    }
+    button7 {
+        background-image: linear-gradient(yellow,lightgreen);
+    }
+    button8 {
+        background-image: linear-gradient(yellow,lightgreen);
+    }
+    button9 {
+        background-image: linear-gradient(lightgreen,green,darkgreen);
+    }
+    button10.buttons {
+        background-image: linear-gradient(lightgreen,green,darkgreen);
+        color: black;
     }
 }
 @media (min-width: 1024px) {
