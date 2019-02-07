@@ -72,12 +72,38 @@ figure {
     color: green;
     font-weight: bold;
 }
+/*Login*/
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid lightgreen;
+    background-color: none;
+    line-height: 3;
+}
+::placeholder {
+    color: lightgreen;
+    text-align: right;
+}
+
+/*Buttons*/
 .buttons {
     padding: 5%;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+button1 {
     background: black;
     color: white;
-    border-radius: 1.5rem;
 }
+button2 {
+    background-image: linear-gradient(-45deg,green, lightgreen, yellow);
+    color: black;
+    float: right;
+}
+button2:hover {
+    width: 90%;
+}
+
 /* Media queries*/
 @media (min-width: 600px) and (orientation: landscape) {
     .caption_data {
@@ -122,10 +148,10 @@ figure {
 }
 @media (min-width: 1400px) {
     header {
-        font-size: 3rem;
+        font-size: 1.3rem;
     }
     .caption_data {
         margin: 10% 0 0 0;
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
