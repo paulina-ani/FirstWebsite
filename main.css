@@ -79,6 +79,7 @@ input {
     border-bottom: 2px solid lightgreen;
     background-color: none;
     line-height: 3;
+    font-size: 1rem;
 }
 ::placeholder {
     color: lightgreen;
@@ -107,7 +108,7 @@ button2:hover {
 /* Media queries*/
 @media (min-width: 600px) and (orientation: landscape) {
     .caption_data {
-        margin: 5% 0 0 0;
+        margin: 2.5% 0 0 0;
         width: 30%;
         float: left;
     }
@@ -145,6 +146,9 @@ button2:hover {
     .caption_data {
         font-size: 1.5rem;
     }
+    input {
+        font-size: 1.5rem;
+    }
 }
 @media (min-width: 1400px) {
     header {
@@ -152,6 +156,9 @@ button2:hover {
     }
     .caption_data {
         margin: 10% 0 0 0;
+        font-size: 2rem;
+    }
+    input {
         font-size: 2rem;
     }
 }
