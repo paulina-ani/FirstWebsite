@@ -1,0 +1,83 @@
+/* Main template*/
+html {
+    font-family: Camria, Georgia, serif;
+    font-size: 16px;
+}
+body {
+    margin: 0 auto;
+}
+header {
+    position: absolute;
+    font-size: 0.7rem;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    text-align: right;
+}
+.caption_container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.caption_figure {
+    margin: 0;
+    max-width: 100%;
+    height: 40vh;
+    background-image: url("Pictures/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.caption_data {
+    display: inline-block;
+    max-width: 60vw;
+    padding: 5%;
+    text-align: right;
+    font-size: 1rem;
+
+}
+/* Media queries*/
+@media (min-width: 600px) and (orientation: landscape) {
+    .caption_data {
+        margin: 5% 0 0 0;
+        width: 40%;
+        float: left;
+    }
+    .caption_figure {
+        width: 50%;
+        height: 100vh;
+        float: right;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        font-size: 1rem;
+    }
+    .caption_data {
+        width: 40%;
+        float: left;
+        font-size: 1.2rem;
+    }
+    .caption_figure {
+        width: 50%;
+        height: 100vh;
+        float: right;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+        font-size: 1.1rem;
+    }
+    .caption_data {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1400px) {
+    header {
+        font-size: 3rem;
+    }
+    .caption_data {
+        margin: 10% 0 0 0;
+        font-size: 4rem;
+    }
+}
