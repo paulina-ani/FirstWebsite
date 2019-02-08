@@ -15,8 +15,8 @@ header {
     text-align: right;
 }
 .caption_container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
 .caption_figure {
@@ -87,70 +87,102 @@ input {
 }
 
 /*Buttons*/
-.buttons0 {
+.buttons1 {
     margin: 2% 0 2% 0;
     padding: 5%;
     border-radius: 0.5rem;
     text-align: center;
-}
-button1 {
     background: black;
     color: white;
 }
-button2 {
+.buttons2 {
+    margin: 2% 0 2% 0;
+    padding: 5%;
+    border-radius: 0.5rem;
+    text-align: center;
     background-image: linear-gradient(-45deg,green, lightgreen, yellow);
     color: black;
     float: right;
+    box-shadow: 0 3px 3px 3px rgba(0,255,64,0.2);
 }
-button2:hover {
-    width: 90%;
+.buttons2:hover {
+    width: 100%;
 }
-.buttons {
-    margin: 1% 0 1% 0;
-    padding: 2.5%;
+.caption_buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons3 {
+    -webkit-box-flex: 1;
+    -moz-box-flex:  1;
+    -webkit-flex:  1;
+    -ms-flex:  1;
+    flex:  1;
+    flex-basis: 100%;
+    margin: 2%;
+    padding: 2%;
     border-radius: 0.5rem;
     text-align: right;
-    width: 90%;
     float: right;
     color: black;
+    box-shadow: 0 3px 3px 3px rgba(0,255,64,0.2);
+
 }
-button3 {
+.buttons3:first-child {
     background-image: linear-gradient(green,lightgreen,yellow);
 }
-button4 {
+.buttons3:last-child {
     background-image: linear-gradient(yellow,lightgreen,green);
 }
-button3:hover, button4:hover {
+.buttons3:hover {
     background-image: linear-gradient(green,green);
     border: 1px solid yellow;
     color: white;
-    box-shadow: 0 3px 3px 3px rgba(255,255,0,0.1);
+    box-shadow: 0 3px 3px 3px rgba(150, 150, 104, 0.2);
     text-align: center;
 }
-button5 {
+.buttons4 {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+    flex-basis: 100%;
+    margin: 2%;
+    border-radius: 0.5rem;
+    text-align: right;
+    float: right;
+    padding: 2%;
+    box-shadow: 0 3px 3px 3px rgba(0,255,64,0.2);
+}
+.buttons4:nth-child(1) {
     background-image: linear-gradient(blue,lightblue);
 }
-button6 {
+.buttons4:nth-child(2) {
     background-image: linear-gradient(lightblue,cyan);
 }
-button7 {
+.buttons4:nth-child(3) {
     background-image: linear-gradient(cyan,yellow);
 }
-button8 {
+.buttons4:nth-child(4) {
     background-image: linear-gradient(yellow,lightgreen);
 }
-button9 {
+.buttons4:nth-child(5) {
     background-image: linear-gradient(lightgreen,green,darkgreen);
 }
-button10.buttons {
+.buttons4:last-child {
     background-image: linear-gradient(green,darkgreen,black);
     color: white;
 }
 /* Media queries*/
-@media (min-width: 600px) and (orientation: landscape) {
+@media (min-width: 568px) and (orientation: landscape) {
     .caption_data {
-        margin: 2.5% 0 0 0;
-        width: 30%;
+        padding: 0 5% 5% 5%;;
+        width: 40%;
         float: left;
     }
     .caption_figure {
@@ -163,13 +195,25 @@ button10.buttons {
     }
 }
 @media (min-width: 768px) {
+    .buttons {
+        width: 35%;
+        display: inline-block;
+        margin: 5%;
+    }
     header {
         font-size: 1rem;
     }
     .caption_data {
+        padding: 0 5% 5% 5%;
         width: 40%;
         float: left;
         font-size: 1.2rem;
+    }
+    .buttons3{
+        flex-basis: 30%;
+    }
+    .buttons4 {
+        flex-basis: 30%;
     }
     .caption_figure {
         width: 50%;
@@ -179,51 +223,21 @@ button10.buttons {
     .alert {
         width: 20%;
     }
-        .buttons {
-        width: 35%;
-        display: inline-block;
-        margin: 5%;
-    }
-    button5 {
-        background-image: linear-gradient(cyan,yellow);
-    }
-    button6 {
-        background-image: linear-gradient(cyan,yellow);
-    }
-    button7 {
-        background-image: linear-gradient(yellow,lightgreen);
-    }
-    button8 {
-        background-image: linear-gradient(yellow,lightgreen);
-    }
-    button9 {
-        background-image: linear-gradient(lightgreen,green,darkgreen);
-    }
-    button10.buttons {
-        background-image: linear-gradient(lightgreen,green,darkgreen);
-        color: black;
-    }
 }
 @media (min-width: 1024px) {
-    header {
-        font-size: 1.1rem;
-    }
     .caption_data {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     input {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 @media (min-width: 1400px) {
-    header {
-        font-size: 1.3rem;
-    }
     .caption_data {
         margin: 10% 0 0 0;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     input {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
