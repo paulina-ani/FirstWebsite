@@ -56,8 +56,8 @@ footer {
     border-radius: 5%;
     box-shadow: 0 5px 5px 5px rgba(0,255,0,0.1)
 }
-figure {
-    max-width: 90%;
+.image {
+    width: 90%;
 }
 .box_close {
     margin-left: 20%;
